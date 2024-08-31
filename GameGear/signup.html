@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - GameGear</title>
+</head>
+<style>
+    /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.9), rgba(51, 51, 51, 0.9)), 
+                url('images/GameGear.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #004400;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.contact-info, .promo-info, .lang-loc {
+    display: flex;
+    align-items: center;
+}
+
+.promo-info .shop-now-btn {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #008800;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.lang-loc select {
+    margin-left: 10px;
+    padding: 5px;
+}
+
+/* Auth Container */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-logo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00cc00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #008800;
+}
+
+.or-divider {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-button.apple { background-color: #000; }
+.social-button.facebook { background-color: #3b5998; }
+.social-button.google { background-color: #db4437; }
+
+.forgot-password, .signup-link {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.forgot-password a, .signup-link a {
+    color: #00cc00;
+    text-decoration: none;
+}
+
+.forgot-password a:hover, .signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #004400;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+</style>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-info">
+                <span>GameGear</span>
+            </div>
+            <div class="promo-info">
+                <span>Get 50% Off on the Selected Items</span>
+                <a href="/sign up and log in/login.html" class="shop-now-btn">Shop now</a>
+            </div>
+            <div class="lang-loc">
+                <span>🌍 Location</span>
+                <select name="language" id="language-select">
+                    <option value="en">English</option>
+                    <!-- Add more languages as needed -->
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="auth-container">
+        <h2>Create Your GG ID</h2>
+        <form class="auth-form" id="signup-form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit" class="auth-button">Sign Up</button>
+        </form>
+        <div class="or-divider">
+            <span>OR</span>
+        </div>
+        <div class="social-login">
+            <a href="#" class="social-button apple">Continue with <i class="fab fa-apple"></i></a>
+            <a href="#" class="social-button facebook">Continue with <i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-button google">Continue with <i class="fab fa-google"></i></a>
+        </div>
+        <div class="signup-link">
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 GameGear. All Rights Reserved.</p>
+    </footer>
+
+    </body>
+</html>
